@@ -18,6 +18,8 @@ const proEssentialRoutes = require('../routes/product_essential');
 const proRecyRoutes = require('../routes/product_recy');
 const proGardningRoutes = require('../routes/product_gardning');
 
+const policyRoutes = require('../routes/privacy_policy');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -37,5 +39,6 @@ router.use('/product_dehydrated', proDehydratedRoutes);
 router.use('/product_essential', proEssentialRoutes);
 router.use('/product_recy', proRecyRoutes);
 router.use('/product_gardning', proGardningRoutes);
+router.use('/privacy_policy', policyRoutes);
 
 module.exports = router;

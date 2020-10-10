@@ -24,6 +24,7 @@ const proDehydratedRouter = require('./routes/product_dehydrated');
 const proEssentialRouter = require('./routes/product_essential');
 const proRecyRouter = require('./routes/product_recy');
 const proGardningRouter = require('./routes/product_gardning');
+const policyRouter = require('./routes/privacy_policy');
 
 const app = express();
 
@@ -73,6 +74,7 @@ app.use('/product_dehydrated', proDehydratedRouter);
 app.use('/product_essential', proEssentialRouter);
 app.use('/product_recy', proRecyRouter);
 app.use('/product_gardning', proGardningRouter);
+app.use('/privacy_policy', policyRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
